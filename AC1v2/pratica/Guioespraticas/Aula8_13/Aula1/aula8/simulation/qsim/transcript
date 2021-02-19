@@ -1,0 +1,31 @@
+# do mips_single_cycle.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:09 on Nov 13,2018
+# vlog -work work mips_single_cycle.vo 
+# -- Compiling module SignExtend
+# 
+# Top level modules:
+# 	SignExtend
+# End time: 09:30:09 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:30:09 on Nov 13,2018
+# vlog -work work Waveform_SignExtend.vwf.vt 
+# -- Compiling module SignExtend_vlg_vec_tst
+# 
+# Top level modules:
+# 	SignExtend_vlg_vec_tst
+# End time: 09:30:09 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.SignExtend_vlg_vec_tst 
+# Start time: 09:30:09 on Nov 13,2018
+# Loading work.SignExtend_vlg_vec_tst
+# Loading work.SignExtend
+# Loading cycloneive_ver.cycloneive_io_obuf
+# Loading cycloneive_ver.cycloneive_io_ibuf
+# after#25
+# ** Note: $finish    : Waveform_SignExtend.vwf.vt(44)
+#    Time: 1 us  Iteration: 0  Instance: /SignExtend_vlg_vec_tst
+# End time: 09:30:09 on Nov 13,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

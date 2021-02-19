@@ -1,0 +1,49 @@
+library IEEE;
+use ieee.std_logic_1164.all;
+
+entity mips_single_cycle is
+	port(CLOCK_50 : in std_logic ,
+			KEY : in std_logic_vector(1 downto 0));
+end mips_single_cycle;
+
+architecture Structural of AccN is
+	signal s_clock : std_logic;
+	signal s_sign, s_pc, s_readData : std_logic_vector(31 downto 0);
+	signal s_jaddr: std_logic_vector(25 downto 0);
+	signal s_pc: std_logic_vector(5 downto 0);		--ADDR_BUS_SIZE => 6
+begin
+	instrution memory : entity work.InstrutionMemory(Behavioral)
+		generic map (ADDR_BUS_SIZE => 6)
+		port map(address => s_pc;
+					readData => s_readData);
+				
+	debouncer : entity work.DebounceUnit(Behavioral)
+		port map(refClk => CLOCK_50,
+					dirtyIn  => KEY[0],
+					pulsedOut => s_clock);
+						
+	pcupdate : entity work.PCupdate(Behavioral)
+		port map( clk => s_clock,
+					reset => not KEY[1],
+					zero => '0',
+					branch => '0',
+					jump => '0',
+					offset => s_sign,
+					jAddr26 => s_jaddr,
+					PC => s_pc);
+				
+	sign extend : entity work.SignExtend(Behavioral)
+		port map(dataIn => s_imm,
+					dataOut => s_sign);
+					
+	inst splitter : entity work.InstrSplitter(Behavioral)
+		port map(instruction => s_readData,
+					opcode => open,
+					rs => open,
+					rt => open,
+					rd => open,
+					shamt => open,
+					funct => open,
+					imm => s_imm,
+					jAddr => s_jaddr);
+end Structural;

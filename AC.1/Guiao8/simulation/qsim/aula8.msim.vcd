@@ -1,0 +1,597 @@
+$comment
+	File created using the following command:
+		vcd file aula8.msim.vcd -direction
+$end
+$date
+	Thu Nov 09 17:36:05 2017
+$end
+$version
+	ModelSim Version 10.4b
+$end
+$timescale
+	1ps
+$end
+
+$scope module instructionMemory_vlg_vec_tst $end
+$var reg 6 ! address [5:0] $end
+$var wire 1 " readData [31] $end
+$var wire 1 # readData [30] $end
+$var wire 1 $ readData [29] $end
+$var wire 1 % readData [28] $end
+$var wire 1 & readData [27] $end
+$var wire 1 ' readData [26] $end
+$var wire 1 ( readData [25] $end
+$var wire 1 ) readData [24] $end
+$var wire 1 * readData [23] $end
+$var wire 1 + readData [22] $end
+$var wire 1 , readData [21] $end
+$var wire 1 - readData [20] $end
+$var wire 1 . readData [19] $end
+$var wire 1 / readData [18] $end
+$var wire 1 0 readData [17] $end
+$var wire 1 1 readData [16] $end
+$var wire 1 2 readData [15] $end
+$var wire 1 3 readData [14] $end
+$var wire 1 4 readData [13] $end
+$var wire 1 5 readData [12] $end
+$var wire 1 6 readData [11] $end
+$var wire 1 7 readData [10] $end
+$var wire 1 8 readData [9] $end
+$var wire 1 9 readData [8] $end
+$var wire 1 : readData [7] $end
+$var wire 1 ; readData [6] $end
+$var wire 1 < readData [5] $end
+$var wire 1 = readData [4] $end
+$var wire 1 > readData [3] $end
+$var wire 1 ? readData [2] $end
+$var wire 1 @ readData [1] $end
+$var wire 1 A readData [0] $end
+
+$scope module i1 $end
+$var wire 1 B gnd $end
+$var wire 1 C vcc $end
+$var wire 1 D unknown $end
+$var tri1 1 E devclrn $end
+$var tri1 1 F devpor $end
+$var tri1 1 G devoe $end
+$var wire 1 H Mux26~0_combout $end
+$var wire 1 I Mux26~1_combout $end
+$var wire 1 J Mux26~2_combout $end
+$var wire 1 K Mux27~0_combout $end
+$var wire 1 L Mux28~0_combout $end
+$var wire 1 M Mux33~0_combout $end
+$var wire 1 N Mux29~0_combout $end
+$var wire 1 O Mux26~3_combout $end
+$var wire 1 P Mux26~4_combout $end
+$var wire 1 Q Mux38~0_combout $end
+$var wire 1 R Mux26~5_combout $end
+$var wire 1 S Mux32~2_combout $end
+$var wire 1 T Mux33~1_combout $end
+$var wire 1 U Mux37~0_combout $end
+$var wire 1 V Mux38~1_combout $end
+$var wire 1 W Mux38~2_combout $end
+$var wire 1 X Mux39~0_combout $end
+$var wire 1 Y Mux43~2_combout $end
+$var wire 1 Z Mux32~3_combout $end
+$var wire 1 [ Mux43~3_combout $end
+$var wire 1 \ Mux35~3_combout $end
+$var wire 1 ] Mux35~6_combout $end
+$var wire 1 ^ Mux36~3_combout $end
+$var wire 1 _ Mux36~6_combout $end
+$var wire 1 ` Mux42~3_combout $end
+$var wire 1 a Mux42~6_combout $end
+$var wire 1 b Mux34~3_combout $end
+$var wire 1 c Mux34~6_combout $end
+$var wire 1 d Mux41~3_combout $end
+$var wire 1 e Mux41~6_combout $end
+$var wire 1 f ~GND~combout $end
+$var wire 1 g Mux26~1_wirecell_combout $end
+$var wire 1 h Mux26~4_wirecell_combout $end
+$var wire 1 i Mux26~5_wirecell_combout $end
+$var wire 1 j Mux32~3_wirecell_combout $end
+$var wire 1 k Mux33~1_wirecell_combout $end
+$var wire 1 l Mux37~0_wirecell_combout $end
+$var wire 1 m Mux38~2_wirecell_combout $end
+$var wire 1 n Mux39~0_wirecell_combout $end
+$var wire 1 o Mux26~1GND_combout $end
+$var wire 1 p address[4]~input_o $end
+$var wire 1 q address[5]~input_o $end
+$var wire 1 r Mux25~0_combout $end
+$var wire 1 s address[1]~input_o $end
+$var wire 1 t address[0]~input_o $end
+$var wire 1 u Mux25~1_combout $end
+$var wire 1 v address[2]~input_o $end
+$var wire 1 w address[3]~input_o $end
+$var wire 1 x Mux25~2_combout $end
+$var wire 1 y Mux25~3_combout $end
+$var wire 1 z Mux25~4_combout $end
+$var wire 1 { Mux24~0_combout $end
+$var wire 1 | Mux24~1_combout $end
+$var wire 1 } Mux22~0_combout $end
+$var wire 1 ~ Mux6~0_combout $end
+$var wire 1 !! Mux23~0_combout $end
+$var wire 1 "! Mux23~1_combout $end
+$var wire 1 #! Mux22~1_combout $end
+$var wire 1 $! Mux21~0_combout $end
+$var wire 1 %! Mux24~2_combout $end
+$var wire 1 &! Mux20~0_combout $end
+$var wire 1 '! Mux20~1_combout $end
+$var wire 1 (! Mux19~0_combout $end
+$var wire 1 )! Mux14~0_combout $end
+$var wire 1 *! Mux13~3_combout $end
+$var wire 1 +! Mux13~6_combout $end
+$var wire 1 ,! Mux12~3_combout $end
+$var wire 1 -! Mux12~6_combout $end
+$var wire 1 .! Mux11~2_combout $end
+$var wire 1 /! Mux11~3_combout $end
+$var wire 1 0! Mux9~0_combout $end
+$var wire 1 1! Mux8~2_combout $end
+$var wire 1 2! Mux7~0_combout $end
+$var wire 1 3! Mux4~0_combout $end
+$var wire 1 4! Mux3~0_combout $end
+$var wire 1 5! Mux0~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0A
+1@
+0?
+1>
+1=
+0<
+0;
+0:
+09
+08
+07
+06
+05
+04
+03
+02
+01
+10
+0/
+0.
+0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+1$
+0#
+0"
+0B
+1C
+xD
+1E
+1F
+1G
+1H
+0I
+0J
+0K
+0L
+1M
+0N
+1O
+1P
+1Q
+0R
+1S
+1T
+1U
+0V
+1W
+0X
+0Y
+1Z
+0[
+0\
+0]
+0^
+0_
+1`
+1a
+0b
+0c
+0d
+0e
+0f
+1g
+0h
+1i
+0j
+0k
+0l
+0m
+1n
+0o
+0p
+0q
+1r
+0s
+0t
+0u
+0v
+0w
+0x
+0y
+0z
+0{
+0|
+1}
+0~
+1!!
+0"!
+1#!
+0$!
+0%!
+0&!
+1'!
+0(!
+0)!
+0*!
+0+!
+0,!
+0-!
+1.!
+1/!
+10!
+01!
+02!
+13!
+04!
+05!
+$end
+#50000
+b100 !
+1v
+03!
+1,!
+1*!
+1%!
+0}
+1{
+1z
+0#!
+1"!
+1?
+0>
+1+
+1&!
+15!
+1|
+1$!
+1-!
+1+!
+15
+14
+0=
+0@
+0$
+00!
+0'!
+1<
+11
+#100000
+b1100 !
+b1000 !
+0v
+1w
+0.!
+0,!
+0%!
+1}
+0{
+0z
+11!
+10!
+1'!
+0!!
+1#!
+0"!
+0?
+1>
+0<
+01
+00
+0/!
+0|
+0'!
+01!
+00!
+0-!
+04
+11
+10
+1<
+1@
+13
+#150000
+b1100 !
+1v
+13!
+1.!
+0*!
+1%!
+0}
+1{
+1z
+0#!
+0>
+0+
+1/!
+1|
+1'!
+11!
+10!
+0+!
+05
+01
+00
+0<
+0@
+03
+#200000
+b11100 !
+b10100 !
+b10000 !
+0v
+0w
+1p
+0%!
+0{
+0z
+00!
+0'!
+0r
+1<
+11
+0&!
+1z
+10!
+1'!
+0<
+01
+#250000
+b10100 !
+1v
+1,!
+1*!
+1%!
+1{
+#300000
+b11100 !
+b11000 !
+0v
+1w
+0.!
+0,!
+0%!
+0{
+1&!
+#350000
+b11100 !
+1v
+1.!
+0*!
+1%!
+1{
+#400000
+b111100 !
+b101100 !
+b100100 !
+b100000 !
+0v
+0w
+0p
+1q
+0%!
+0{
+00!
+0'!
+0&!
+1<
+11
+10!
+1'!
+0<
+01
+#450000
+b100100 !
+1v
+1,!
+1*!
+1%!
+1{
+#500000
+b101100 !
+b101000 !
+0v
+1w
+0.!
+0,!
+0%!
+0{
+1&!
+#550000
+b101100 !
+1v
+1.!
+0*!
+1%!
+1{
+#600000
+b111100 !
+b110100 !
+b110000 !
+0v
+0w
+1p
+0%!
+0{
+00!
+0'!
+0&!
+1<
+11
+10!
+1'!
+0<
+01
+#650000
+b110100 !
+1v
+1,!
+1*!
+1%!
+1{
+#700000
+b111100 !
+b111000 !
+0v
+1w
+0.!
+0,!
+0%!
+0{
+1&!
+#750000
+b111100 !
+1v
+1.!
+0*!
+1%!
+1{
+#800000
+b11100 !
+b1100 !
+b100 !
+b0 !
+0v
+0w
+0p
+0q
+0%!
+1}
+0{
+01!
+00!
+0'!
+0&!
+1!!
+1r
+1#!
+1>
+1<
+11
+10
+05!
+0|
+10!
+1'!
+0z
+0$!
+1=
+0<
+01
+1@
+1$
+#850000
+b100 !
+1v
+03!
+1,!
+1*!
+1%!
+0}
+1{
+1z
+0#!
+1"!
+1?
+0>
+1+
+1&!
+15!
+1|
+1$!
+1-!
+1+!
+15
+14
+0=
+0@
+0$
+00!
+0'!
+1<
+11
+#900000
+b1100 !
+b1000 !
+0v
+1w
+0.!
+0,!
+0%!
+1}
+0{
+0z
+11!
+10!
+1'!
+0!!
+1#!
+0"!
+0?
+1>
+0<
+01
+00
+0/!
+0|
+0'!
+01!
+00!
+0-!
+04
+11
+10
+1<
+1@
+13
+#950000
+b1100 !
+1v
+13!
+1.!
+0*!
+1%!
+0}
+1{
+1z
+0#!
+0>
+0+
+1/!
+1|
+1'!
+11!
+10!
+0+!
+05
+01
+00
+0<
+0@
+03
+#1000000

@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/Joaorpsgomes/AC1/Aula8/simulation/qsim
+vinstructionMemory
+Z1 !s110 1510248964
+!i10b 1
+!s100 jIOMYYL78Kzd<ic=zNLb62
+IS34:l3oOVYcmO2H?zY2O<1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1510248962
+Z3 8aula8.vo
+Z4 Faula8.vo
+Z5 L0 32
+Z6 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z7 !s108 1510248964.000000
+Z8 !s107 aula8.vo|
+Z9 !s90 -work|work|aula8.vo|
+!i113 1
+Z10 o-work work
+ninstruction@memory
+vinstructionMemory_vlg_vec_tst
+R1
+!i10b 1
+!s100 a@SMI:a8XAK=mPSk0A=:O1
+IAb8gc1WW]]PfTJIQZVfUz3
+R2
+R0
+w1510248955
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+Z11 L0 30
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R10
+ninstruction@memory_vlg_vec_tst
+vPCupdate
+Z12 !s110 1510063085
+!i10b 1
+!s100 7<@nfDoj]F1i;GG@mEO[X2
+IZ?fU:OZe;F2<1;8Mc^C>X2
+R2
+R0
+w1510063081
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z13 !s108 1510063085.000000
+R8
+R9
+!i113 1
+R10
+n@p@cupdate
+vPCupdate_vlg_vec_tst
+R12
+!i10b 1
+!s100 8]@<l>bDO9VJT^mlH4JS40
+I<>5ab^?3g7KN0]l4YjDRB2
+R2
+R0
+w1510063076
+8pcUpdate.vwf.vt
+FpcUpdate.vwf.vt
+R11
+R6
+r1
+!s85 0
+31
+R13
+!s107 pcUpdate.vwf.vt|
+!s90 -work|work|pcUpdate.vwf.vt|
+!i113 1
+R10
+n@p@cupdate_vlg_vec_tst

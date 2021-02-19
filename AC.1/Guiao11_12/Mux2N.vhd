@@ -1,0 +1,17 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity Mux2N is
+	generic(N: positive := 32);
+	port(oper0 :in std_logic_vector(N-1 downto 0);
+		  oper1 :in std_logic_vector(N-1 downto 0);
+		  sel: in std_logic;
+		  muxOut : out std_logic_vector(N-1 downto 0));
+end Mux2N;
+
+architecture Behavioral of Mux2N is
+begin
+		  muxOut <= oper0 when sel='0' else
+					oper1;
+end Behavioral;					

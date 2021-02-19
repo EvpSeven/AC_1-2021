@@ -1,0 +1,48 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+ 
+library work;
+use work.MIPS_pkg.all;
+use work.DisplayUnit_pkg.all;
+
+entity RegFile is
+	generic(WORD_BITS : integer range 1 to 128 := 32;
+			  ADDR_BITS : integer range 1 to 10 := 5);
+	port(clk : in std_logic;
+			-- asynchronous read port 1
+	readAddr1 : in std_logic_vector(ADDR_BITS-1 downto 0);
+	readData1 : out std_logic_vector(WORD_BITS-1 downto 0);
+	-- asynchronous read port 2
+	readAddr2 : in std_logic_vector(ADDR_BITS-1 downto 0);
+	readData2 : out std_logic_vector(WORD_BITS-1 downto 0);
+	
+			-- synchronous write port
+	writeAddr : in std_logic_vector(ADDR_BITS-1 downto 0);
+	writeData : in std_logic_vector(WORD_BITS-1 downto 0);
+	writeEnable : in std_logic);
+end RegFile;
+
+architecture Behavioral of RegFile is
+	subtype TDataWord is std_logic_vector(WORD_BITS-1 downto 0);
+	type Tmem is array (0 to 2**ADDR_BITS) of TDataWord;
+	signal s_memory : TMem := (others => (others => '0')); 
+
+begin
+	process(clk,writeEnable)
+	begin
+	if(rising_edge(clk)) then
+		if(writeEnable = '1') then
+			s_memory(to_integer(unsigned(writeAddr))) <= writeData;
+		end if;
+	end if;
+	end process;
+	readData1 <= (others => '0') when (to_integer(unsigned(readAddr1)) = 0) else
+	s_memory(to_integer(unsigned(readAddr1)));
+	readData2 <= (others => '0') when (to_integer(unsigned(readAddr2)) = 0) else
+	s_memory(to_integer(unsigned(readAddr2)));
+	
+	
+	DU_RFdata <= s_memory(to_integer(unsigned(DU_RFaddr)));
+end Behavioral;	

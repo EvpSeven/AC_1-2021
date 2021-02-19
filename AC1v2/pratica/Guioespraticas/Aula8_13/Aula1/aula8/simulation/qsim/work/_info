@@ -1,0 +1,142 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/ANA LUISA/Desktop/universidade/2ano_1semestre/AC1/aula8/simulation/qsim
+vInstructionMemory
+Z1 !s110 1542100874
+!i10b 1
+!s100 MVA=za[TXmYXI9WzRf:Qj0
+II[2z10am2QknFY50=g4hV3
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1542100871
+Z3 8mips_single_cycle.vo
+Z4 Fmips_single_cycle.vo
+Z5 L0 31
+Z6 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z7 !s108 1542100874.000000
+Z8 !s107 mips_single_cycle.vo|
+Z9 !s90 -work|work|mips_single_cycle.vo|
+!i113 1
+Z10 o-work work
+Z11 tCvgOpt 0
+n@instruction@memory
+vInstructionMemory_vlg_vec_tst
+R1
+!i10b 1
+!s100 AJmUh8F;je4QA`U:Tg5G[2
+I<9V`SQ4g4;Tl:CGX3imnL3
+R2
+R0
+w1542100869
+8Waveform_InstructionMemory.vwf.vt
+FWaveform_InstructionMemory.vwf.vt
+Z12 L0 29
+R6
+r1
+!s85 0
+31
+R7
+!s107 Waveform_InstructionMemory.vwf.vt|
+!s90 -work|work|Waveform_InstructionMemory.vwf.vt|
+!i113 1
+R10
+R11
+n@instruction@memory_vlg_vec_tst
+vPCupdate
+Z13 !s110 1541498939
+!i10b 1
+!s100 kkkMUSo;f_3WZP1DK5K9l1
+I24z]cDTNSWcFoM^bEmj_B2
+R2
+R0
+w1541498938
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z14 !s108 1541498939.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@p@cupdate
+vPCupdate_vlg_vec_tst
+R13
+!i10b 1
+!s100 4B4f<1f9NUm1CU=V[QaWD2
+Ie4[Yecd:C`9kA9;4a`C752
+R2
+R0
+w1541498937
+8Waveform_PCupdate.vwf.vt
+FWaveform_PCupdate.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R14
+!s107 Waveform_PCupdate.vwf.vt|
+!s90 -work|work|Waveform_PCupdate.vwf.vt|
+!i113 1
+R10
+R11
+n@p@cupdate_vlg_vec_tst
+vSignExtend
+Z15 !s110 1542101409
+!i10b 1
+!s100 ?5m`Z0]:mc8c9D5]cjTlY2
+IMH5><;;YZ_MFO<FM1=f=n3
+R2
+R0
+w1542101408
+R3
+R4
+R5
+R6
+r1
+!s85 0
+31
+Z16 !s108 1542101409.000000
+R8
+R9
+!i113 1
+R10
+R11
+n@sign@extend
+vSignExtend_vlg_vec_tst
+R15
+!i10b 1
+!s100 Coh]Qh97DHAf4@:G1RQ550
+INGLPiOzHL?TBK=A?N_Wif0
+R2
+R0
+w1542101406
+8Waveform_SignExtend.vwf.vt
+FWaveform_SignExtend.vwf.vt
+R12
+R6
+r1
+!s85 0
+31
+R16
+!s107 Waveform_SignExtend.vwf.vt|
+!s90 -work|work|Waveform_SignExtend.vwf.vt|
+!i113 1
+R10
+R11
+n@sign@extend_vlg_vec_tst

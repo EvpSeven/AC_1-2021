@@ -1,0 +1,52 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/dalp1/Desktop/unas_cosas/AC1/aula_11_12/simulation/qsim
+vPCupdate
+Z1 !s110 1511784531
+!i10b 1
+!s100 iTb0QGlhkVS1DgoM;R^D01
+IJk=:WIHnPEZYLnPSKLP5d1
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+R0
+w1511784528
+8mips_multi_cycle.vo
+Fmips_multi_cycle.vo
+L0 32
+Z3 OV;L;10.4b;61
+r1
+!s85 0
+31
+Z4 !s108 1511784531.000000
+!s107 mips_multi_cycle.vo|
+!s90 -work|work|mips_multi_cycle.vo|
+!i113 1
+Z5 o-work work
+n@p@cupdate
+vPCupdate_vlg_vec_tst
+R1
+!i10b 1
+!s100 06YVPiV10o3W3egOSh9NB1
+I90mCej05bHT3[Z`0FEoD<2
+R2
+R0
+w1511784521
+8PCupdate.vwf.vt
+FPCupdate.vwf.vt
+L0 30
+R3
+r1
+!s85 0
+31
+R4
+!s107 PCupdate.vwf.vt|
+!s90 -work|work|PCupdate.vwf.vt|
+!i113 1
+R5
+n@p@cupdate_vlg_vec_tst

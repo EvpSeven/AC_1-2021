@@ -1,0 +1,6 @@
+.data
+.text
+.globl main
+main: j l1
+add $2,$3,$4
+l1: jr $ra
